@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英雄聯盟：大混戰即時搜尋</title>
+  <style>
+    body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; background: #121212; color: #fff; }
+    h2 { text-align: center; color: #5383e8; }
+    input { width: 100%; padding: 14px; font-size: 16px; border-radius: 8px; border: 1px solid #333; background: #1e1e1e; color: #fff; box-sizing: border-box; }
+    input:focus { outline: none; border-color: #5383e8; }
+    .card { background: #1e1e1e; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #333; }
+    .loading { color: #888; margin-top: 15px; text-align: center; display: none; }
+    .tag-container { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+    .tag { background: #2a2b36; padding: 8px 14px; border-radius: 6px; font-size: 14px; color: #ecf0f1; border: 1px solid #3d3e52; }
+    .notice { font-size: 12px; color: #777; margin-top: 6px; }
+  </style>
+</head>
+<body>
+
+  <h2>ARAM Mayhem 大混戰即時出裝搜尋</h2>
+  <input type="text" id="heroInput" placeholder="請輸入英雄中文或英文名稱 (例: 拉克絲, 露露, lux)...">
+  <div class="notice">* 支援中文搜尋，例如：露露、拉克絲、阿狸、卡爾瑟斯等</div>
+  
+  <div id="loading" class="loading">正在向 OP.GG 擷取最新出裝與符文，請稍候...</div>
+  <div id="result"></div>
+
+  <script>
+    // 替換為你的 Cloudflare Worker 網址 (若尚未設定 Worker，可先留空測試備用代理)
+    const WORKER_URL = "https://你的worker名稱.workers.dev";
+
+    // 中文英雄名稱對照表
+    const HERO_MAP = {
+      "露露": "lulu", "拉克絲": "lux", "阿狸": "ahri", "九尾妖狐": "ahri",
+      "阿特羅斯": "aatrox", "亞托克斯": "aatrox", "阿卡莉": "akali", "艾希": "ashe",
+      "布里茨": "blitzcrank", "抓抓": "blitzcrank", "凱特琳": "caitlyn", "達瑞斯": "darius",
+      "伊澤瑞爾": "ezreal", "小丑": "shaco", "薩科": "shaco", "蓋倫": "garen",
+      "提摩": "teemo", "亞索": "yasuo", "疾風劍豪": "yasuo", "約德爾": "veigar",
+      "維迦": "veigar", "李星": "lee-sin", "盲僧": "lee-sin", "卡爾瑟斯": "karthus"
+      // 可以在此繼續補充常見英雄
+    };
+
+    let debounceTimer;
+
+    document.getElementById('heroInput').addEventListener('input', (e) => {
+      clearTimeout(debounceTimer);
+      const rawQuery = e.target.value.trim().toLowerCase();
+      
+      if (!rawQuery) {
+        document.getElementById('result').innerHTML = '';
+        return;
+      }
+
+      // 中文轉英文代碼，如果找不到對應表就直接採用輸入值
+      const heroKey = HERO_MAP[rawQuery] || rawQuery;
+
+      debounceTimer = setTimeout(() => {
+        fetchOPGGData(heroKey, rawQuery);
+      }, 600);
+    });
+
+    async function fetchOPGGData(heroKey, displayName) {
+      const loadingEl = document.getElementById('loading');
+      const resultEl = document.getElementById('result');
+      
+      loadingEl.style.display = 'block';
+      resultEl.innerHTML = '';
+
+      try {
+        // 使用 Worker 代理抓取
+        const requestUrl = WORKER_URL.startsWith("http") 
+          ? `${WORKER_URL}?hero=${encodeURIComponent(heroKey)}`
+          : `https://api.allorigins.win/get?url=${encodeURIComponent(`https://op.gg/zh-tw/lol/modes/aram-mayhem/${heroKey}/items`)}`;
+
+        const response = await fetch(requestUrl);
+        if (!response.ok) throw new Error("網路連線失敗");
+        
+        const data = await response.json();
+        const htmlText = data.contents || data.html || await response.text();
+        
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmlText, 'text/html');
+
+        // 升級版圖片擷取邏輯（抓取所有 CDN 圖片中的名稱）
+        const items = Array.from(doc.querySelectorAll('img'))
+                          .map(img => img.alt || img.title || '')
+                          .filter(name => name && !name.includes('Icon') && !name.includes('OP.GG'))
+                          .slice(0, 6);
+
+        const runes = Array.from(doc.querySelectorAll('img[src*="rune"], img[src*="perk"]'))
+                          .map(img => img.alt || img.title || '推薦符文')
+                          .filter((v, i, a) => a.indexOf(v) === i)
+                          .slice(0, 4);
+
+        if (items.length === 0) {
+          throw new Error("查無該英雄資料，請確認英雄名稱是否正確");
+        }
+
+        resultEl.innerHTML = `
+          <div class="card">
+            <h3>英雄：${displayName.toUpperCase()} (${heroKey})</h3>
+            <h4>推薦出裝</h4>
+            <div class="tag-container">
+              ${items.map(i => `<span class="tag">🛡️ ${i}</span>`).join('')}
+            </div>
+            <h4>推薦符文</h4>
+            <div class="tag-container">
+              ${runes.length ? runes.map(r => `<span class="tag">⚡ ${r}</span>`).join('') : '<span class="tag">⚡ 精準 / 啟示 核心組合</span>'}
+            </div>
+          </div>
+        `;
+      } catch (err) {
+        resultEl.innerHTML = `<div class="card" style="color:#ff6b6b">搜尋提示：${err.message}</div>`;
+      } finally {
+        loadingEl.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
