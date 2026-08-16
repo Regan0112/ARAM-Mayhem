@@ -19,25 +19,20 @@
 <body>
 
   <h2>ARAM Mayhem 大混戰即時出裝搜尋</h2>
-  <input type="text" id="heroInput" placeholder="請輸入英雄中文或英文名稱 (例: 拉克絲, 露露, lux)...">
-  <div class="notice">* 支援中文搜尋，例如：露露、拉克絲、阿狸、卡爾瑟斯等</div>
+  <input type="text" id="heroInput" placeholder="請輸入英雄中文或英文名稱 (例: 露露, 拉克絲, lulu)...">
+  <div class="notice">* 支援中文英雄搜尋</div>
   
-  <div id="loading" class="loading">正在向 OP.GG 擷取最新出裝與符文，請稍候...</div>
+  <div id="loading" class="loading">正在擷取 OP.GG 資料，請稍候...</div>
   <div id="result"></div>
 
   <script>
-    // 替換為你的 Cloudflare Worker 網址 (若尚未設定 Worker，可先留空測試備用代理)
-    const WORKER_URL = "https://你的worker名稱.workers.dev";
-
-    // 中文英雄名稱對照表
+    // 常用中文對應表（可隨時擴充）
     const HERO_MAP = {
       "露露": "lulu", "拉克絲": "lux", "阿狸": "ahri", "九尾妖狐": "ahri",
-      "阿特羅斯": "aatrox", "亞托克斯": "aatrox", "阿卡莉": "akali", "艾希": "ashe",
-      "布里茨": "blitzcrank", "抓抓": "blitzcrank", "凱特琳": "caitlyn", "達瑞斯": "darius",
-      "伊澤瑞爾": "ezreal", "小丑": "shaco", "薩科": "shaco", "蓋倫": "garen",
-      "提摩": "teemo", "亞索": "yasuo", "疾風劍豪": "yasuo", "約德爾": "veigar",
-      "維迦": "veigar", "李星": "lee-sin", "盲僧": "lee-sin", "卡爾瑟斯": "karthus"
-      // 可以在此繼續補充常見英雄
+      "亞托克斯": "aatrox", "阿卡莉": "akali", "艾希": "ashe", "布里茨": "blitzcrank",
+      "凱特琳": "caitlyn", "達瑞斯": "darius", "伊澤瑞爾": "ezreal", "薩科": "shaco",
+      "小丑": "shaco", "蓋倫": "garen", "提摩": "teemo", "亞索": "yasuo", "維迦": "veigar",
+      "李星": "lee-sin", "卡爾瑟斯": "karthus", "卡莎": "kaisa", "藍寶": "rumble"
     };
 
     let debounceTimer;
@@ -51,7 +46,7 @@
         return;
       }
 
-      // 中文轉英文代碼，如果找不到對應表就直接採用輸入值
+      // 自動轉換中文名稱為 OP.GG 的英文代碼
       const heroKey = HERO_MAP[rawQuery] || rawQuery;
 
       debounceTimer = setTimeout(() => {
@@ -66,34 +61,32 @@
       loadingEl.style.display = 'block';
       resultEl.innerHTML = '';
 
-      try {
-        // 使用 Worker 代理抓取
-        const requestUrl = WORKER_URL.startsWith("http") 
-          ? `${WORKER_URL}?hero=${encodeURIComponent(heroKey)}`
-          : `https://api.allorigins.win/get?url=${encodeURIComponent(`https://op.gg/zh-tw/lol/modes/aram-mayhem/${heroKey}/items`)}`;
+      // 使用公用免費代理，繞過跨網域限制
+      const targetUrl = `https://op.gg/zh-tw/lol/modes/aram-mayhem/${heroKey}/items`;
+      const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
 
-        const response = await fetch(requestUrl);
-        if (!response.ok) throw new Error("網路連線失敗");
+      try {
+        const response = await fetch(proxyUrl);
+        if (!response.ok) throw new Error("存取失敗，請確認英雄名稱");
         
-        const data = await response.json();
-        const htmlText = data.contents || data.html || await response.text();
-        
+        const htmlText = await response.text();
         const parser = new DOMParser();
         const doc = parser.parseFromString(htmlText, 'text/html');
 
-        // 升級版圖片擷取邏輯（抓取所有 CDN 圖片中的名稱）
-        const items = Array.from(doc.querySelectorAll('img'))
+        // 擷取裝備與符文標籤/圖片
+        const items = Array.from(doc.querySelectorAll('img[src*="item"]'))
                           .map(img => img.alt || img.title || '')
-                          .filter(name => name && !name.includes('Icon') && !name.includes('OP.GG'))
+                          .filter((v, i, a) => v && a.indexOf(v) === i)
                           .slice(0, 6);
 
         const runes = Array.from(doc.querySelectorAll('img[src*="rune"], img[src*="perk"]'))
-                          .map(img => img.alt || img.title || '推薦符文')
-                          .filter((v, i, a) => a.indexOf(v) === i)
+                          .map(img => img.alt || img.title || '')
+                          .filter((v, i, a) => v && a.indexOf(v) === i)
                           .slice(0, 4);
 
-        if (items.length === 0) {
-          throw new Error("查無該英雄資料，請確認英雄名稱是否正確");
+        if (items.length === 0 && runes.length === 0) {
+          resultEl.innerHTML = `<div class="card" style="color:#ffb86c">搜尋提示：已成功連線，但未抓取到資料。請確認英雄英文代碼是否正確（例如 露露 請輸入 lulu）。</div>`;
+          return;
         }
 
         resultEl.innerHTML = `
@@ -101,16 +94,16 @@
             <h3>英雄：${displayName.toUpperCase()} (${heroKey})</h3>
             <h4>推薦出裝</h4>
             <div class="tag-container">
-              ${items.map(i => `<span class="tag">🛡️ ${i}</span>`).join('')}
+              ${items.length ? items.map(i => `<span class="tag">🛡️ ${i}</span>`).join('') : '<span class="tag">暫無數據</span>'}
             </div>
             <h4>推薦符文</h4>
             <div class="tag-container">
-              ${runes.length ? runes.map(r => `<span class="tag">⚡ ${r}</span>`).join('') : '<span class="tag">⚡ 精準 / 啟示 核心組合</span>'}
+              ${runes.length ? runes.map(r => `<span class="tag">⚡ ${r}</span>`).join('') : '<span class="tag">暫無數據</span>'}
             </div>
           </div>
         `;
       } catch (err) {
-        resultEl.innerHTML = `<div class="card" style="color:#ff6b6b">搜尋提示：${err.message}</div>`;
+        resultEl.innerHTML = `<div class="card" style="color:#ff6b6b">連線失敗：${err.message}</div>`;
       } finally {
         loadingEl.style.display = 'none';
       }
