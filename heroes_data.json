@@ -1,0 +1,3322 @@
+{
+  "厄薩斯": {
+    "id": "aatrox",
+    "name": "厄薩斯",
+    "title": "冥血劍魔",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Aatrox.png",
+    "items": [
+      "星蝕",
+      "突破天際",
+      "死亡之舞",
+      "精進之矛",
+      "振奮盔甲",
+      "殘暴之力"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "阿璃": {
+    "id": "ahri",
+    "name": "阿璃",
+    "title": "九尾妖狐",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ahri.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "惡意",
+      "中婭沙漏"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "阿卡莉": {
+    "id": "akali",
+    "name": "阿卡莉",
+    "title": "隻影刺客",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Akali.png",
+    "items": [
+      "海克斯科技槍刃",
+      "黯影之炎",
+      "中婭沙漏",
+      "死亡之帽",
+      "海克斯科技火箭腰帶",
+      "雷霆風暴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "埃可尚": {
+    "id": "akshan",
+    "name": "埃可尚",
+    "title": "俠盜哨兵",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Akshan.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "多明尼克的問候",
+      "衝擊火炮",
+      "海妖殺手",
+      "殞落王者之劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "亞歷斯塔": {
+    "id": "alistar",
+    "name": "亞歷斯塔",
+    "title": "牛頭酋長",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Alistar.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "荊棘之甲",
+      "好戰者鎧甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "阿姆姆": {
+    "id": "amumu",
+    "name": "阿姆姆",
+    "title": "殤之木乃伊",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Amumu.png",
+    "items": [
+      "女神之淚",
+      "日炎聖盾",
+      "芬布爾之冬",
+      "深淵面具",
+      "惡意",
+      "雷霆風暴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "艾妮維亞": {
+    "id": "anivia",
+    "name": "艾妮維亞",
+    "title": "冰晶鳳凰",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Anivia.png",
+    "items": [
+      "女神之淚",
+      "時光之杖",
+      "熾天使的擁抱",
+      "黎安卓的折磨",
+      "惡意",
+      "瑞萊的冰晶節杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "安妮": {
+    "id": "annie",
+    "name": "安妮",
+    "title": "黑暗之女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Annie.png",
+    "items": [
+      "惡意",
+      "雷霆風暴",
+      "黯影之炎",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "亞菲利歐": {
+    "id": "aphelios",
+    "name": "亞菲利歐",
+    "title": "信仰銳武",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Aphelios.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "多明尼克的問候",
+      "芮蘭颶風箭",
+      "嗜血者",
+      "海克斯光學C44"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "艾希": {
+    "id": "ashe",
+    "name": "艾希",
+    "title": "冰霜射手",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ashe.png",
+    "items": [
+      "雲陶狂箭",
+      "芮蘭颶風箭",
+      "無盡之刃",
+      "殞落王者之劍",
+      "惡意",
+      "帝王命令"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "翱銳龍獸": {
+    "id": "aurelionsol",
+    "name": "翱銳龍獸",
+    "title": "星際漫遊者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/AurelionSol.png",
+    "items": [
+      "黑焰火炬",
+      "瑞萊的冰晶節杖",
+      "黎安卓的折磨",
+      "女神之淚",
+      "時光之杖",
+      "熾天使的擁抱"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "阿祈爾": {
+    "id": "azir",
+    "name": "阿祈爾",
+    "title": "蘇瑞瑪砂皇",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Azir.png",
+    "items": [
+      "納什之牙",
+      "黯影之炎",
+      "死亡之帽",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "巴德": {
+    "id": "bard",
+    "name": "巴德",
+    "title": "漂泊守望者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Bard.png",
+    "items": [
+      "盧登回音",
+      "巫妖之禍",
+      "衝擊火炮",
+      "納什之牙",
+      "死亡之帽",
+      "史提克彈簧刀"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "貝爾薇斯": {
+    "id": "belveth",
+    "name": "貝爾薇斯",
+    "title": "虛空女皇",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Belveth.png",
+    "items": [
+      "海妖殺手",
+      "殞落王者之劍",
+      "智慧末刃",
+      "死亡之舞",
+      "鬼索的狂暴之刃",
+      "臨界點"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "布里茨": {
+    "id": "blitzcrank",
+    "name": "布里茨",
+    "title": "蒸汽巨神兵",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Blitzcrank.png",
+    "items": [
+      "惡意",
+      "雷霆風暴",
+      "黯影之炎",
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "布蘭德": {
+    "id": "brand",
+    "name": "布蘭德",
+    "title": "復仇業火",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Brand.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "黯影之炎",
+      "血書詛咒",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "布郎姆": {
+    "id": "braum",
+    "name": "布郎姆",
+    "title": "弗雷爾卓德豪腕",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Braum.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "好戰者鎧甲",
+      "荊棘之甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "布蕾爾": {
+    "id": "briar",
+    "name": "布蕾爾",
+    "title": "披枷饞鬼",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Briar.png",
+    "items": [
+      "突破天際",
+      "星蝕",
+      "死亡之舞",
+      "振奮盔甲",
+      "無盡飢渴",
+      "殘暴之力"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "凱特琳": {
+    "id": "caitlyn",
+    "name": "凱特琳",
+    "title": "執法者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Caitlyn.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "衝擊火炮",
+      "多明尼克的問候",
+      "海克斯光學C44",
+      "雲陶狂箭"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡蜜兒": {
+    "id": "camille",
+    "name": "卡蜜兒",
+    "title": "鋼鐵殘影",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Camille.png",
+    "items": [
+      "三相之力",
+      "突破天際",
+      "死亡之舞",
+      "狂怒九頭蛇",
+      "史特拉克手套",
+      "魔提斯深淵"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡莎碧雅": {
+    "id": "cassiopeia",
+    "name": "卡莎碧雅",
+    "title": "蛇之擁抱",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Cassiopeia.png",
+    "items": [
+      "女神之淚",
+      "時光之杖",
+      "熾天使的擁抱",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "科加斯": {
+    "id": "chogath",
+    "name": "科加斯",
+    "title": "虛空恐懼",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Chogath.png",
+    "items": [
+      "雄心之鋼",
+      "好戰者鎧甲",
+      "荊棘之甲",
+      "無盡絕望",
+      "凱尼克欺瞞者",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "庫奇": {
+    "id": "corki",
+    "name": "庫奇",
+    "title": "英勇投彈手",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Corki.png",
+    "items": [
+      "女神之淚",
+      "三相之力",
+      "終極魔劍",
+      "蒐集者",
+      "無盡之刃",
+      "多明尼克的問候"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "達瑞斯": {
+    "id": "darius",
+    "name": "達瑞斯",
+    "title": "諾克薩斯之力",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Darius.png",
+    "items": [
+      "三相之力",
+      "突破天際",
+      "史特拉克手套",
+      "死者肩甲",
+      "步履破壞者",
+      "自然之力"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "黛安娜": {
+    "id": "diana",
+    "name": "黛安娜",
+    "title": "輕藐之月",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Diana.png",
+    "items": [
+      "雷霆風暴",
+      "黯影之炎",
+      "中婭沙漏",
+      "死亡之帽",
+      "海克斯科技火箭腰帶",
+      "雄心之鋼"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "達瑞文": {
+    "id": "draven",
+    "name": "達瑞文",
+    "title": "處刑娛樂大師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Draven.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "嗜血者",
+      "多明尼克的問候",
+      "殘暴之力",
+      "傲慢"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "蒙多醫生": {
+    "id": "drmundo",
+    "name": "蒙多醫生",
+    "title": "佐恩狂人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/DrMundo.png",
+    "items": [
+      "雄心之鋼",
+      "好戰者鎧甲",
+      "振奮盔甲",
+      "荊棘之甲",
+      "無盡絕望",
+      "泰坦九頭蛇"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "艾克": {
+    "id": "ekko",
+    "name": "艾克",
+    "title": "時空少年",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ekko.png",
+    "items": [
+      "海克斯科技火箭腰帶",
+      "暮夜與黎明",
+      "黯影之炎",
+      "死亡之帽",
+      "中婭沙漏",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "伊莉絲": {
+    "id": "elise",
+    "name": "伊莉絲",
+    "title": "蜘蛛女王",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Elise.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "黎安卓的折磨",
+      "巫妖之禍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "伊芙琳": {
+    "id": "evelynn",
+    "name": "伊芙琳",
+    "title": "臨終擁抱",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Evelynn.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "巫妖之禍",
+      "死亡之帽",
+      "虛空之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "伊澤瑞爾": {
+    "id": "ezreal",
+    "name": "伊澤瑞爾",
+    "title": "探險家",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ezreal.png",
+    "items": [
+      "女神之淚",
+      "三相之力",
+      "終極魔劍",
+      "精進之矛",
+      "席利妲咒怨",
+      "無盡飢渴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "費德提克": {
+    "id": "fiddlesticks",
+    "name": "費德提克",
+    "title": "亙古之懼",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Fiddlesticks.png",
+    "items": [
+      "惡意",
+      "黎安卓的折磨",
+      "中婭沙漏",
+      "黯影之炎",
+      "死亡之帽",
+      "瑞萊的冰晶節杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "菲歐拉": {
+    "id": "fiora",
+    "name": "菲歐拉",
+    "title": "孤高劍客",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Fiora.png",
+    "items": [
+      "狂怒九頭蛇",
+      "三相之力",
+      "死亡之舞",
+      "突破天際",
+      "步履破壞者",
+      "魔提斯深淵"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "飛斯": {
+    "id": "fizz",
+    "name": "飛斯",
+    "title": "深海頑童",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Fizz.png",
+    "items": [
+      "盧登回音",
+      "巫妖之禍",
+      "黯影之炎",
+      "中婭沙漏",
+      "雷霆風暴",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "加里歐": {
+    "id": "galio",
+    "name": "加里歐",
+    "title": "禦國巨像",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Galio.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "虛偽光彩",
+      "荊棘之甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "剛普朗克": {
+    "id": "gangplank",
+    "name": "剛普朗克",
+    "title": "海洋之災",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Gangplank.png",
+    "items": [
+      "奪魄之鐮",
+      "蒐集者",
+      "無盡之刃",
+      "多明尼克的問候",
+      "三相之力",
+      "致死宣告"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "蓋倫": {
+    "id": "garen",
+    "name": "蓋倫",
+    "title": "蒂瑪西亞之力",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Garen.png",
+    "items": [
+      "步履破壞者",
+      "幻影之舞",
+      "無盡之刃",
+      "死者肩甲",
+      "致死宣告",
+      "黑色切割者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "吶兒": {
+    "id": "gnar",
+    "name": "吶兒",
+    "title": "失落之子",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Gnar.png",
+    "items": [
+      "三相之力",
+      "黑色切割者",
+      "史特拉克手套",
+      "死亡之舞",
+      "智慧末刃",
+      "雄心之鋼"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "古拉格斯": {
+    "id": "gragas",
+    "name": "古拉格斯",
+    "title": "酒桶之王",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Gragas.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "巫妖之禍",
+      "時光之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "葛雷夫": {
+    "id": "graves",
+    "name": "葛雷夫",
+    "title": "亡命之徒",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Graves.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "多明尼克的問候",
+      "殘暴之力",
+      "傲慢",
+      "嗜血者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "關": {
+    "id": "gwen",
+    "name": "關",
+    "title": "聖啟織偶",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Gwen.png",
+    "items": [
+      "峽谷製造者",
+      "納什之牙",
+      "暮夜與黎明",
+      "黯影之炎",
+      "死亡之帽",
+      "振奮盔甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "赫克林": {
+    "id": "hecarim",
+    "name": "赫克林",
+    "title": "戰爭之影",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Hecarim.png",
+    "items": [
+      "女神之淚",
+      "精進之矛",
+      "終極魔劍",
+      "死亡之舞",
+      "星蝕",
+      "突破天際"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "漢默丁格": {
+    "id": "heimerdinger",
+    "name": "漢默丁格",
+    "title": "大發明家",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Heimerdinger.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "惡意",
+      "中婭沙漏",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "赫威": {
+    "id": "hwei",
+    "name": "赫威",
+    "title": "奇想繪師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Hwei.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "黯影之炎",
+      "死亡之帽",
+      "盧登回音",
+      "死墓之花"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "伊羅旖": {
+    "id": "illaoi",
+    "name": "伊羅旖",
+    "title": "海妖祭司",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Illaoi.png",
+    "items": [
+      "突破天際",
+      "寒冰霸拳",
+      "振奮盔甲",
+      "死亡之舞",
+      "史特拉克手套",
+      "雄心之鋼"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "伊瑞莉雅": {
+    "id": "irelia",
+    "name": "伊瑞莉雅",
+    "title": "舞劍靈使",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Irelia.png",
+    "items": [
+      "殞落王者之劍",
+      "突破天際",
+      "死亡之舞",
+      "智慧末刃",
+      "史特拉克手套",
+      "海妖殺手"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "埃爾文": {
+    "id": "ivern",
+    "name": "埃爾文",
+    "title": "綠林之父",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ivern.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "贖罪神石",
+      "熾灼魔器",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "珍娜": {
+    "id": "janna",
+    "name": "珍娜",
+    "title": "風暴女神",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Janna.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "熾灼魔器",
+      "贖罪神石",
+      "帝王命令"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "嘉文四世": {
+    "id": "jarvaniv",
+    "name": "嘉文四世",
+    "title": "蒂瑪西亞楷模",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/JarvanIV.png",
+    "items": [
+      "突破天際",
+      "星蝕",
+      "死亡之舞",
+      "殘暴之力",
+      "傲慢",
+      "公理弧刃"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "賈克斯": {
+    "id": "jax",
+    "name": "賈克斯",
+    "title": "武器達人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jax.png",
+    "items": [
+      "三相之力",
+      "突破天際",
+      "死亡之舞",
+      "智慧末刃",
+      "中婭沙漏",
+      "精進之矛"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "杰西": {
+    "id": "jayce",
+    "name": "杰西",
+    "title": "明日守護者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jayce.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "終極魔劍",
+      "席利妲咒怨",
+      "蒐集者",
+      "星蝕"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "燼": {
+    "id": "jhin",
+    "name": "燼",
+    "title": "炫技大師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jhin.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "衝擊火炮",
+      "殘暴之力",
+      "傲慢",
+      "多明尼克的問候"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "吉茵珂絲": {
+    "id": "jinx",
+    "name": "吉茵珂絲",
+    "title": "暴走重砲",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jinx.png",
+    "items": [
+      "雲陶狂箭",
+      "芮蘭颶風箭",
+      "無盡之刃",
+      "海克斯光學C44",
+      "幻影之舞",
+      "多明尼克的問候"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "凱莎": {
+    "id": "kaisa",
+    "name": "凱莎",
+    "title": "虛空之女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kaisa.png",
+    "items": [
+      "海妖殺手",
+      "鬼索的狂暴之刃",
+      "納什之牙",
+      "臨界點",
+      "盧登回音",
+      "視界專注"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "克黎思妲": {
+    "id": "kalista",
+    "name": "克黎思妲",
+    "title": "復仇之矛",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kalista.png",
+    "items": [
+      "殞落王者之劍",
+      "鬼索的狂暴之刃",
+      "臨界點",
+      "芮蘭颶風箭",
+      "史提克彈簧刀",
+      "智慧末刃"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡瑪": {
+    "id": "karma",
+    "name": "卡瑪",
+    "title": "魂之啟者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Karma.png",
+    "items": [
+      "惡意",
+      "盧登回音",
+      "黯影之炎",
+      "雷霆風暴",
+      "死亡之帽",
+      "死墓之花"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡爾瑟斯": {
+    "id": "karthus",
+    "name": "卡爾瑟斯",
+    "title": "死亡頌唱者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Karthus.png",
+    "items": [
+      "惡意",
+      "黎安卓的折磨",
+      "黯影之炎",
+      "死亡之帽",
+      "黑焰火炬",
+      "雷霆風暴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡薩丁": {
+    "id": "kassadin",
+    "name": "卡薩丁",
+    "title": "虛空行者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kassadin.png",
+    "items": [
+      "女神之淚",
+      "時光之杖",
+      "熾天使的擁抱",
+      "惡意",
+      "巫妖之禍",
+      "黯影之炎"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡特蓮娜": {
+    "id": "katarina",
+    "name": "卡特蓮娜",
+    "title": "不祥之刃",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Katarina.png",
+    "items": [
+      "海妖殺手",
+      "殞落王者之劍",
+      "臨界點",
+      "海克斯科技槍刃",
+      "黯影之炎",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "凱爾": {
+    "id": "kayle",
+    "name": "凱爾",
+    "title": "正義天使",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kayle.png",
+    "items": [
+      "殞落王者之劍",
+      "鬼索的狂暴之刃",
+      "智慧末刃",
+      "納什之牙",
+      "暮夜與黎明",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "慨影": {
+    "id": "kayn",
+    "name": "慨影",
+    "title": "闇魂收割者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kayn.png",
+    "items": [
+      "星蝕",
+      "黑色切割者",
+      "死亡之舞",
+      "殘暴之力",
+      "傲慢",
+      "電流旋風劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "凱能": {
+    "id": "kennen",
+    "name": "凱能",
+    "title": "狂暴之心",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kennen.png",
+    "items": [
+      "海克斯科技火箭腰帶",
+      "中婭沙漏",
+      "黯影之炎",
+      "雷霆風暴",
+      "死亡之帽",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡力斯": {
+    "id": "khazix",
+    "name": "卡力斯",
+    "title": "虛空掠食者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Khazix.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "蒐集者",
+      "席利妲咒怨",
+      "夜色緣界",
+      "終極魔劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "鏡爪": {
+    "id": "kindred",
+    "name": "鏡爪",
+    "title": "永恆獵手",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kindred.png",
+    "items": [
+      "雲陶狂箭",
+      "蒐集者",
+      "無盡之刃",
+      "海妖殺手",
+      "殞落王者之劍",
+      "芮蘭颶風箭"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "克雷德": {
+    "id": "kled",
+    "name": "克雷德",
+    "title": "暴躁騎士",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Kled.png",
+    "items": [
+      "雄心之鋼",
+      "泰坦九頭蛇",
+      "狂霸血甲",
+      "黑色切割者",
+      "史特拉克手套",
+      "步履破壞者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "寇格魔": {
+    "id": "kogmaw",
+    "name": "寇格魔",
+    "title": "深淵巨口",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/KogMaw.png",
+    "items": [
+      "殞落王者之劍",
+      "鬼索的狂暴之刃",
+      "芮蘭颶風箭",
+      "臨界點",
+      "女神之淚",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "卡桑帝": {
+    "id": "ksante",
+    "name": "卡桑帝",
+    "title": "納祖瑪之傲",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/KSante.png",
+    "items": [
+      "雄心之鋼",
+      "寒冰霸拳",
+      "千變萬化之賈克修",
+      "無盡絕望",
+      "虛偽光彩",
+      "凱尼克欺瞞者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "勒布朗": {
+    "id": "leblanc",
+    "name": "勒布朗",
+    "title": "詐欺師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Leblanc.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "虛空之杖",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "李星": {
+    "id": "leesin",
+    "name": "李星",
+    "title": "盲眼武僧",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/LeeSin.png",
+    "items": [
+      "星蝕",
+      "突破天際",
+      "死亡之舞",
+      "黑色切割者",
+      "殘暴之力",
+      "傲慢"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "雷歐娜": {
+    "id": "leona",
+    "name": "雷歐娜",
+    "title": "黎明之光",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Leona.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "凱尼克欺瞞者",
+      "虛偽光彩",
+      "女神之淚",
+      "芬布爾之冬"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "莉莉亞": {
+    "id": "lillia",
+    "name": "莉莉亞",
+    "title": "羞赧綻華",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Lillia.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "星河馳騁",
+      "峽谷製造者",
+      "中婭沙漏"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "麗珊卓": {
+    "id": "lissandra",
+    "name": "麗珊卓",
+    "title": "傲雪巫女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Lissandra.png",
+    "items": [
+      "惡意",
+      "中婭沙漏",
+      "黯影之炎",
+      "盧登回音",
+      "黎安卓的折磨",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "路西恩": {
+    "id": "lucian",
+    "name": "路西恩",
+    "title": "驅魔聖槍",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Lucian.png",
+    "items": [
+      "奪魄之鐮",
+      "那歐閃刃",
+      "無盡之刃",
+      "蒐集者",
+      "多明尼克的問候",
+      "致死宣告"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "露璐": {
+    "id": "lulu",
+    "name": "露璐",
+    "title": "精靈魔法使",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Lulu.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "熾灼魔器",
+      "贖罪神石",
+      "米凱的祝福"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "拉克絲": {
+    "id": "lux",
+    "name": "拉克絲",
+    "title": "光之少女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Lux.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "惡意",
+      "視界專注"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "墨菲特": {
+    "id": "malphite",
+    "name": "墨菲特",
+    "title": "幻石碎片",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Malphite.png",
+    "items": [
+      "惡意",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "盧登回音",
+      "中婭沙漏"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "馬爾札哈": {
+    "id": "malzahar",
+    "name": "馬爾札哈",
+    "title": "虛空先知",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Malzahar.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "黯影之炎",
+      "血書詛咒",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "茂凱": {
+    "id": "maokai",
+    "name": "茂凱",
+    "title": "扭曲樹人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Maokai.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "振奮盔甲",
+      "無盡絕望",
+      "黑焰火炬"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "易大師": {
+    "id": "masteryi",
+    "name": "易大師",
+    "title": "無極劍聖",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/MasterYi.png",
+    "items": [
+      "蒐集者",
+      "殞落王者之劍",
+      "智慧末刃",
+      "無盡之刃",
+      "多明尼克的問候",
+      "死亡之舞"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "米里歐": {
+    "id": "milio",
+    "name": "米里歐",
+    "title": "溫煦良焰",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Milio.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "熾灼魔器",
+      "贖罪神石",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "好運姐": {
+    "id": "missfortune",
+    "name": "好運姐",
+    "title": "賞金獵人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/MissFortune.png",
+    "items": [
+      "蒐集者",
+      "公理弧刃",
+      "席利妲咒怨",
+      "無盡之刃",
+      "多明尼克的問候",
+      "嗜血者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "悟空": {
+    "id": "monkeyking",
+    "name": "悟空",
+    "title": "齊天大聖",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/MonkeyKing.png",
+    "items": [
+      "突破天際",
+      "三相之力",
+      "死亡之舞",
+      "黑色切割者",
+      "魔提斯深淵",
+      "史特拉克手套"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "魔鬥凱薩": {
+    "id": "mordekaiser",
+    "name": "魔鬥凱薩",
+    "title": " 金屬亡靈",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Mordekaiser.png",
+    "items": [
+      "峽谷製造者",
+      "瑞萊的冰晶節杖",
+      "振奮盔甲",
+      "黎安卓的折磨",
+      "荊棘之甲",
+      "暮夜與黎明"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "魔甘娜": {
+    "id": "morgana",
+    "name": "魔甘娜",
+    "title": "墮落天使",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Morgana.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "中婭沙漏",
+      "瑞萊的冰晶節杖",
+      "黯影之炎",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "娜菲芮": {
+    "id": "naafiri",
+    "name": "娜菲芮",
+    "title": "百犬之牙",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Naafiri.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "蒐集者",
+      "星蝕",
+      "席利妲咒怨",
+      "死亡之舞"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "娜米": {
+    "id": "nami",
+    "name": "娜米",
+    "title": "海潮之音",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nami.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "熾灼魔器",
+      "帝王命令",
+      "贖罪神石"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "納瑟斯": {
+    "id": "nasus",
+    "name": "納瑟斯",
+    "title": "沙漠死神",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nasus.png",
+    "items": [
+      "三相之力",
+      "冰霜之心",
+      "振奮盔甲",
+      "寒冰霸拳",
+      "黑焰火炬",
+      "黎安卓的折磨"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "納帝魯斯": {
+    "id": "nautilus",
+    "name": "納帝魯斯",
+    "title": "深淵巨人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nautilus.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "荊棘之甲",
+      "好戰者鎧甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "妮可": {
+    "id": "neeko",
+    "name": "妮可",
+    "title": "好奇變色龍",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Neeko.png",
+    "items": [
+      "惡意",
+      "海克斯科技火箭腰帶",
+      "中婭沙漏",
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "奈德麗": {
+    "id": "nidalee",
+    "name": "奈德麗",
+    "title": "狂野獵手",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nidalee.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "視界專注",
+      "巫妖之禍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "淣菈": {
+    "id": "nilah",
+    "name": "淣菈",
+    "title": "奔放笑顏",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nilah.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "不朽盾弓",
+      "多明尼克的問候",
+      "嗜血者",
+      "雲陶狂箭"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "夜曲": {
+    "id": "nocturne",
+    "name": "夜曲",
+    "title": "永恆夢魘",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nocturne.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "公理弧刃",
+      "蒐集者",
+      "實驗型海克斯板甲",
+      "夜色緣界"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "努努和威朗普": {
+    "id": "nunu",
+    "name": "努努和威朗普",
+    "title": "冰原拍檔",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nunu.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "海克斯科技火箭腰帶",
+      "虛空之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "歐拉夫": {
+    "id": "olaf",
+    "name": "歐拉夫",
+    "title": "狂戰士",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Olaf.png",
+    "items": [
+      "步履破壞者",
+      "實驗型海克斯板甲",
+      "死亡之舞",
+      "振奮盔甲",
+      "突破天際",
+      "狂怒九頭蛇"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "奧莉安娜": {
+    "id": "orianna",
+    "name": "奧莉安娜",
+    "title": "發條少女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Orianna.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "雷霆風暴",
+      "虛空之杖",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "鄂爾": {
+    "id": "ornn",
+    "name": "鄂爾",
+    "title": "爐心山神",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ornn.png",
+    "items": [
+      "雄心之鋼",
+      "好戰者鎧甲",
+      "荊棘之甲",
+      "無盡絕望",
+      "千變萬化之賈克修",
+      "凱尼克欺瞞者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "潘森": {
+    "id": "pantheon",
+    "name": "潘森",
+    "title": "不屈之矛",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Pantheon.png",
+    "items": [
+      "星蝕",
+      "突破天際",
+      "死亡之舞",
+      "黑色切割者",
+      "精進之矛",
+      "殘暴之力"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "波比": {
+    "id": "poppy",
+    "name": "波比",
+    "title": "聖槌守護者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Poppy.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "荊棘之甲",
+      "突破天際"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "派克": {
+    "id": "pyke",
+    "name": "派克",
+    "title": "血港開膛手",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Pyke.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "公理弧刃",
+      "夜色緣界",
+      "妖夢鬼刀",
+      "蒐集者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "姬亞娜": {
+    "id": "qiyana",
+    "name": "姬亞娜",
+    "title": "元素女帝",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Qiyana.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "公理弧刃",
+      "席利妲咒怨",
+      "蒐集者",
+      "電流旋風劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "葵恩": {
+    "id": "quinn",
+    "name": "葵恩",
+    "title": "蒂瑪西亞之翼",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Quinn.png",
+    "items": [
+      "蒐集者",
+      "無盡之刃",
+      "多明尼克的問候",
+      "電流旋風劍",
+      "夜色緣界",
+      "殞落王者之劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "銳空": {
+    "id": "rakan",
+    "name": "銳空",
+    "title": "惑羽",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Rakan.png",
+    "items": [
+      "芬布爾之冬",
+      "日輪的加冕",
+      "錫柯的聚合之力",
+      "女神之淚",
+      "雄心之鋼",
+      "無盡絕望"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "拉姆斯": {
+    "id": "rammus",
+    "name": "拉姆斯",
+    "title": "披甲龍龜",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Rammus.png",
+    "items": [
+      "荊棘之甲",
+      "千變萬化之賈克修",
+      "無盡絕望",
+      "日炎聖盾",
+      "蘭頓之兆",
+      "好戰者鎧甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "雷珂煞": {
+    "id": "reksai",
+    "name": "雷珂煞",
+    "title": "虛空穿梭者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/RekSai.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "振奮盔甲",
+      "蘭頓之兆",
+      "突破天際",
+      "泰坦九頭蛇"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "銳兒": {
+    "id": "rell",
+    "name": "銳兒",
+    "title": "鋼鐵少女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Rell.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "荊棘之甲",
+      "女神之淚",
+      "芬布爾之冬",
+      "凱尼克欺瞞者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "睿娜妲．格萊斯克": {
+    "id": "renata",
+    "name": "睿娜妲．格萊斯克",
+    "title": "化學女爵",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Renata.png",
+    "items": [
+      "惡意",
+      "帝王命令",
+      "蘇瑞亞的戰歌",
+      "女神之淚",
+      "歌謠之冠",
+      "贖罪神石"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "雷尼克頓": {
+    "id": "renekton",
+    "name": "雷尼克頓",
+    "title": "沙漠屠夫",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Renekton.png",
+    "items": [
+      "突破天際",
+      "星蝕",
+      "死亡之舞",
+      "振奮盔甲",
+      "史特拉克手套",
+      "精進之矛"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "雷葛爾": {
+    "id": "rengar",
+    "name": "雷葛爾",
+    "title": "傲慢伏擊者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Rengar.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "蒐集者",
+      "電流旋風劍",
+      "無盡之刃",
+      "多明尼克的問候"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "雷玟": {
+    "id": "riven",
+    "name": "雷玟",
+    "title": "破刃放逐者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Riven.png",
+    "items": [
+      "星蝕",
+      "突破天際",
+      "死亡之舞",
+      "殘暴之力",
+      "傲慢",
+      "公理弧刃"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "藍寶": {
+    "id": "rumble",
+    "name": "藍寶",
+    "title": "武裝機兵",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Rumble.png",
+    "items": [
+      "黎安卓的折磨",
+      "惡意",
+      "黯影之炎",
+      "瑞萊的冰晶節杖",
+      "峽谷製造者",
+      "血書詛咒"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "雷茲": {
+    "id": "ryze",
+    "name": "雷茲",
+    "title": "符文法師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ryze.png",
+    "items": [
+      "女神之淚",
+      "時光之杖",
+      "熾天使的擁抱",
+      "時現者",
+      "冰霜之心",
+      "星河馳騁"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "煞蜜拉": {
+    "id": "samira",
+    "name": "煞蜜拉",
+    "title": "荒漠薔薇",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Samira.png",
+    "items": [
+      "蒐集者",
+      "不朽盾弓",
+      "無盡之刃",
+      "多明尼克的問候",
+      "殘暴之力",
+      "傲慢"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "史瓦妮": {
+    "id": "sejuani",
+    "name": "史瓦妮",
+    "title": "北境之怒",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sejuani.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "荊棘之甲",
+      "好戰者鎧甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "姍娜": {
+    "id": "senna",
+    "name": "姍娜",
+    "title": "贖魂聖槍",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Senna.png",
+    "items": [
+      "史提克彈簧刀",
+      "黑色切割者",
+      "衝擊火炮",
+      "海克斯光學C44",
+      "無盡之刃",
+      "蒐集者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "瑟菈紛": {
+    "id": "seraphine",
+    "name": "瑟菈紛",
+    "title": "燦眸歌姬",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Seraphine.png",
+    "items": [
+      "盧登回音",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "惡意",
+      "黯影之炎",
+      "雷霆風暴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "賽特": {
+    "id": "sett",
+    "name": "賽特",
+    "title": "獸血拳皇",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sett.png",
+    "items": [
+      "雄心之鋼",
+      "狂霸血甲",
+      "好戰者鎧甲",
+      "步履破壞者",
+      "史特拉克手套",
+      "死亡之舞"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "薩科": {
+    "id": "shaco",
+    "name": "薩科",
+    "title": "惡魔小丑",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Shaco.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "黯影之炎",
+      "盧登回音",
+      "惡意",
+      "蒐集者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "慎": {
+    "id": "shen",
+    "name": "慎",
+    "title": "暮光之眼",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Shen.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "荊棘之甲",
+      "好戰者鎧甲",
+      "振奮盔甲",
+      "虛偽光彩"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "希瓦娜": {
+    "id": "shyvana",
+    "name": "希瓦娜",
+    "title": "半龍少女",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Shyvana.png",
+    "items": [
+      "暮夜與黎明",
+      "黎安卓的折磨",
+      "峽谷製造者",
+      "三相之力",
+      "精進之矛",
+      "死亡之舞"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "辛吉德": {
+    "id": "singed",
+    "name": "辛吉德",
+    "title": "瘋狂煉金師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Singed.png",
+    "items": [
+      "時光之杖",
+      "瑞萊的冰晶節杖",
+      "黎安卓的折磨",
+      "死者肩甲",
+      "自然之力",
+      "女神之淚"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "賽恩": {
+    "id": "sion",
+    "name": "賽恩",
+    "title": "亡靈勇士",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sion.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "荊棘之甲",
+      "虛偽光彩",
+      "好戰者鎧甲",
+      "蘭頓之兆"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "希維爾": {
+    "id": "sivir",
+    "name": "希維爾",
+    "title": "戰爭女神",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sivir.png",
+    "items": [
+      "雲陶狂箭",
+      "那歐閃刃",
+      "無盡之刃",
+      "奪魄之鐮",
+      "多明尼克的問候",
+      "致死宣告"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "史加納": {
+    "id": "skarner",
+    "name": "史加納",
+    "title": "水晶戰蠍",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Skarner.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "無盡絕望",
+      "凱尼克欺瞞者",
+      "振奮盔甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "索娜": {
+    "id": "sona",
+    "name": "索娜",
+    "title": "琴仙",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sona.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "熾灼魔器",
+      "流水之杖",
+      "盧登回音"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "索拉卡": {
+    "id": "soraka",
+    "name": "索拉卡",
+    "title": "眾星之子",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Soraka.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "好戰者鎧甲",
+      "時光之杖",
+      "贖罪神石"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "斯溫": {
+    "id": "swain",
+    "name": "斯溫",
+    "title": "諾克薩斯總帥",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Swain.png",
+    "items": [
+      "時光之杖",
+      "瑞萊的冰晶節杖",
+      "振奮盔甲",
+      "黎安卓的折磨",
+      "峽谷製造者",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "賽勒斯": {
+    "id": "sylas",
+    "name": "賽勒斯",
+    "title": "罪鍊術士",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sylas.png",
+    "items": [
+      "時光之杖",
+      "峽谷製造者",
+      "中婭沙漏",
+      "海克斯科技火箭腰帶",
+      "星河馳騁",
+      "振奮盔甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "星朵拉": {
+    "id": "syndra",
+    "name": "星朵拉",
+    "title": "黑暗領主",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Syndra.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "雷霆風暴",
+      "虛空之杖",
+      "黑焰火炬"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "貪啃奇": {
+    "id": "tahmkench",
+    "name": "貪啃奇",
+    "title": "河中巨怪",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/TahmKench.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "振奮盔甲",
+      "荊棘之甲",
+      "好戰者鎧甲",
+      "蘭頓之兆"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "塔莉雅": {
+    "id": "taliyah",
+    "name": "塔莉雅",
+    "title": "岩石編織者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Taliyah.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "雷霆風暴",
+      "黑焰火炬",
+      "黎安卓的折磨"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "塔隆": {
+    "id": "talon",
+    "name": "塔隆",
+    "title": "神影刺客",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Talon.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "蒐集者",
+      "公理弧刃",
+      "席利妲咒怨",
+      "星蝕"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "塔里克": {
+    "id": "taric",
+    "name": "塔里克",
+    "title": "瓦羅然之盾",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Taric.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "振奮盔甲",
+      "無盡絕望",
+      "荊棘之甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "提摩": {
+    "id": "teemo",
+    "name": "提摩",
+    "title": "迅捷斥候",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Teemo.png",
+    "items": [
+      "惡意",
+      "黎安卓的折磨",
+      "黯影之炎",
+      "黑焰火炬",
+      "史提克彈簧刀",
+      "黑魔禁書"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "瑟雷西": {
+    "id": "thresh",
+    "name": "瑟雷西",
+    "title": "鍊魂獄長",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Thresh.png",
+    "items": [
+      "女神之淚",
+      "雄心之鋼",
+      "芬布爾之冬",
+      "好戰者鎧甲",
+      "無盡絕望",
+      "凱尼克欺瞞者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "崔絲塔娜": {
+    "id": "tristana",
+    "name": "崔絲塔娜",
+    "title": "約德爾炮手",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Tristana.png",
+    "items": [
+      "雲陶狂箭",
+      "那歐閃刃",
+      "無盡之刃",
+      "蒐集者",
+      "多明尼克的問候",
+      "致死宣告"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "特朗德": {
+    "id": "trundle",
+    "name": "特朗德",
+    "title": "巨魔王",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Trundle.png",
+    "items": [
+      "雄心之鋼",
+      "突破天際",
+      "振奮盔甲",
+      "荊棘之甲",
+      "殞落王者之劍",
+      "女神之淚"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "泰達米爾": {
+    "id": "tryndamere",
+    "name": "泰達米爾",
+    "title": "蠻族之王",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Tryndamere.png",
+    "items": [
+      "狂怒九頭蛇",
+      "幻影之舞",
+      "無盡之刃",
+      "雄心之鋼",
+      "殞落王者之劍",
+      "那歐閃刃"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "逆命": {
+    "id": "twistedfate",
+    "name": "逆命",
+    "title": "卡牌大師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/TwistedFate.png",
+    "items": [
+      "盧登回音",
+      "衝擊火炮",
+      "巫妖之禍",
+      "黯影之炎",
+      "時光之杖",
+      "死亡之帽"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "圖奇": {
+    "id": "twitch",
+    "name": "圖奇",
+    "title": "瘟疫之源",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Twitch.png",
+    "items": [
+      "蒐集者",
+      "獵魔弩箭",
+      "無盡之刃",
+      "雲陶狂箭",
+      "芮蘭颶風箭",
+      "殞落王者之劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "烏迪爾": {
+    "id": "udyr",
+    "name": "烏迪爾",
+    "title": "神靈行者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Udyr.png",
+    "items": [
+      "惡意",
+      "黎安卓的折磨",
+      "黯影之炎",
+      "瑞萊的冰晶節杖",
+      "血書詛咒",
+      "雷霆風暴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "烏爾加特": {
+    "id": "urgot",
+    "name": "烏爾加特",
+    "title": "重裝無畏",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Urgot.png",
+    "items": [
+      "雄心之鋼",
+      "泰坦九頭蛇",
+      "黑色切割者",
+      "史特拉克手套",
+      "千變萬化之賈克修",
+      "狂霸血甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "法洛士": {
+    "id": "varus",
+    "name": "法洛士",
+    "title": "懲戒之箭",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Varus.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "終極魔劍",
+      "席利妲咒怨",
+      "蒐集者",
+      "殞落王者之劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "汎": {
+    "id": "vayne",
+    "name": "汎",
+    "title": "暗夜獵人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Vayne.png",
+    "items": [
+      "殞落王者之劍",
+      "鬼索的狂暴之刃",
+      "智慧末刃",
+      "臨界點",
+      "海妖殺手",
+      "實驗型海克斯板甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "維迦": {
+    "id": "veigar",
+    "name": "維迦",
+    "title": "邪惡小法師",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Veigar.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "雷霆風暴",
+      "女神之淚",
+      "時光之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "威寇茲": {
+    "id": "velkoz",
+    "name": "威寇茲",
+    "title": "虛空魔眼",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Velkoz.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "黎安卓的折磨",
+      "雷霆風暴",
+      "視界專注"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "薇可絲": {
+    "id": "vex",
+    "name": "薇可絲",
+    "title": "愁霧影巫",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Vex.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "中婭沙漏",
+      "惡意"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "菲艾": {
+    "id": "vi",
+    "name": "菲艾",
+    "title": "鐵腕特警",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Vi.png",
+    "items": [
+      "突破天際",
+      "星蝕",
+      "死亡之舞",
+      "殘暴之力",
+      "傲慢",
+      "蒐集者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "維爾戈": {
+    "id": "viego",
+    "name": "維爾戈",
+    "title": "殞落王者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Viego.png",
+    "items": [
+      "海妖殺手",
+      "蒐集者",
+      "不朽盾弓",
+      "突破天際",
+      "殞落王者之劍",
+      "死亡之舞"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "維克特": {
+    "id": "viktor",
+    "name": "維克特",
+    "title": "機械使徒",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Viktor.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "雷霆風暴",
+      "死亡之帽",
+      "黑焰火炬",
+      "黎安卓的折磨"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "弗拉迪米爾": {
+    "id": "vladimir",
+    "name": "弗拉迪米爾",
+    "title": "血色收割者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Vladimir.png",
+    "items": [
+      "峽谷製造者",
+      "星河馳騁",
+      "死亡之帽",
+      "振奮盔甲",
+      "海克斯科技火箭腰帶",
+      "黎安卓的折磨"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "弗力貝爾": {
+    "id": "volibear",
+    "name": "弗力貝爾",
+    "title": "無情風暴",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Volibear.png",
+    "items": [
+      "雄心之鋼",
+      "無盡絕望",
+      "振奮盔甲",
+      "暮夜與黎明",
+      "那歐閃刃",
+      "荊棘之甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "沃維克": {
+    "id": "warwick",
+    "name": "沃維克",
+    "title": "嗜血狂怒",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Warwick.png",
+    "items": [
+      "突破天際",
+      "殞落王者之劍",
+      "振奮盔甲",
+      "荊棘之甲",
+      "步履破壞者",
+      "死亡之舞"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "剎雅": {
+    "id": "xayah",
+    "name": "剎雅",
+    "title": "逆羽",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Xayah.png",
+    "items": [
+      "雲陶狂箭",
+      "那歐閃刃",
+      "無盡之刃",
+      "奪魄之鐮",
+      "多明尼克的問候",
+      "嗜血者"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "齊勒斯": {
+    "id": "xerath",
+    "name": "齊勒斯",
+    "title": "遠古魔導",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Xerath.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "視界專注",
+      "雷霆風暴",
+      "虛空之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "趙信": {
+    "id": "xinzhao",
+    "name": "趙信",
+    "title": "蒂瑪西亞總管",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/XinZhao.png",
+    "items": [
+      "突破天際",
+      "星蝕",
+      "死亡之舞",
+      "黑色切割者",
+      "史提克彈簧刀",
+      "暮夜與黎明"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "犽宿": {
+    "id": "yasuo",
+    "name": "犽宿",
+    "title": "放逐浪人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Yasuo.png",
+    "items": [
+      "殞落王者之劍",
+      "不朽盾弓",
+      "無盡之刃",
+      "海妖殺手",
+      "智慧末刃",
+      "雲陶狂箭"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "犽凝": {
+    "id": "yone",
+    "name": "犽凝",
+    "title": "不滅劍豪",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Yone.png",
+    "items": [
+      "殞落王者之劍",
+      "不朽盾弓",
+      "無盡之刃",
+      "智慧末刃",
+      "海妖殺手",
+      "寒冰霸拳"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "約瑞科": {
+    "id": "yorick",
+    "name": "約瑞科",
+    "title": "亡魂牧人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Yorick.png",
+    "items": [
+      "雄心之鋼",
+      "寒冰霸拳",
+      "振奮盔甲",
+      "突破天際",
+      "三相之力",
+      "荊棘之甲"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "悠咪": {
+    "id": "yuumi",
+    "name": "悠咪",
+    "title": "魔法靈貓",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Yuumi.png",
+    "items": [
+      "女神之淚",
+      "月之石再生裝置",
+      "歌謠之冠",
+      "熾灼魔器",
+      "米凱的祝福",
+      "流水之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "札克": {
+    "id": "zac",
+    "name": "札克",
+    "title": "魔人",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Zac.png",
+    "items": [
+      "雄心之鋼",
+      "振奮盔甲",
+      "無盡絕望",
+      "荊棘之甲",
+      "好戰者鎧甲",
+      "日炎聖盾"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "劫": {
+    "id": "zed",
+    "name": "劫",
+    "title": "影忍至尊",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Zed.png",
+    "items": [
+      "殘暴之力",
+      "傲慢",
+      "公理弧刃",
+      "蒐集者",
+      "席利妲咒怨",
+      "電流旋風劍"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "婕莉": {
+    "id": "zeri",
+    "name": "婕莉",
+    "title": "佐恩電光",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Zeri.png",
+    "items": [
+      "雲陶狂箭",
+      "芮蘭颶風箭",
+      "無盡之刃",
+      "獵魔弩箭",
+      "暴風之劍",
+      "狂暴利刃"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "希格斯": {
+    "id": "ziggs",
+    "name": "希格斯",
+    "title": "魔法爆破專家",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ziggs.png",
+    "items": [
+      "盧登回音",
+      "黯影之炎",
+      "死亡之帽",
+      "黎安卓的折磨",
+      "黑焰火炬",
+      "雷霆風暴"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "極靈": {
+    "id": "zilean",
+    "name": "極靈",
+    "title": "時光守護者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Zilean.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "視界專注",
+      "女神之淚"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "柔依": {
+    "id": "zoe",
+    "name": "柔依",
+    "title": "暮光星靈",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Zoe.png",
+    "items": [
+      "盧登回音",
+      "雷霆風暴",
+      "黯影之炎",
+      "死亡之帽",
+      "視界專注",
+      "虛空之杖"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  },
+  "枷蘿": {
+    "id": "zyra",
+    "name": "枷蘿",
+    "title": "荊棘漫遊者",
+    "avatar": "https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Zyra.png",
+    "items": [
+      "黑焰火炬",
+      "黎安卓的折磨",
+      "瑞萊的冰晶節杖",
+      "黯影之炎",
+      "惡意",
+      "黑魔禁書"
+    ],
+    "runes": [
+      "艾莉召喚",
+      "法力流繫帶",
+      "超然",
+      "焦灼"
+    ]
+  }
+}
