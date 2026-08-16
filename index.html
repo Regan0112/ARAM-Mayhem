@@ -3,41 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARAM 大混戰 - 英雄核心裝備與 S級強化符文</title>
+    <title>ARAM 大混戰 - 全英雄 S級符文與核心裝備指南</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #0f172a; color: #f8fafc; padding: 20px; }
-        .container { max-width: 1100px; margin: 0 auto; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            background: #0f172a; 
+            color: #f8fafc; 
+            padding: 20px; 
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
         
         header { text-align: center; margin-bottom: 25px; }
-        h1 { color: #38bdf8; font-size: 2rem; margin-bottom: 8px; }
-        p.subtitle { color: #94a3b8; font-size: 0.95rem; }
+        h1 { color: #38bdf8; font-size: 2.2rem; margin-bottom: 8px; font-weight: 800; }
+        p.subtitle { color: #94a3b8; font-size: 1rem; }
 
+        .search-container { position: relative; max-width: 600px; margin: 0 auto 30px; }
         .search-box { 
             width: 100%; 
-            padding: 14px 20px; 
+            padding: 16px 22px; 
             font-size: 1.1rem; 
             border: 2px solid #334155; 
-            border-radius: 12px; 
+            border-radius: 14px; 
             background: #1e293b; 
             color: #fff; 
-            margin-bottom: 25px; 
             outline: none; 
             transition: border-color 0.2s, box-shadow 0.2s; 
         }
-        .search-box:focus { border-color: #38bdf8; box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2); }
+        .search-box:focus { border-color: #38bdf8; box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25); }
 
-        .hero-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
-        .card { background: #1e293b; border-radius: 14px; padding: 20px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); }
+        .hero-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 24px; }
         
-        .hero-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; border-bottom: 1px solid #334155; padding-bottom: 12px; }
-        .hero-avatar { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #38bdf8; flex-shrink: 0; }
-        .hero-name { font-size: 1.3rem; font-weight: bold; color: #f1f5f9; }
-        .hero-title { font-size: 0.85rem; color: #94a3b8; }
+        .card { 
+            background: #1e293b; 
+            border-radius: 16px; 
+            padding: 20px; 
+            border: 1px solid #334155; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .hero-header { display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #334155; padding-bottom: 14px; }
+        .hero-avatar { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #38bdf8; flex-shrink: 0; }
+        .hero-info { flex-grow: 1; }
+        .hero-name { font-size: 1.35rem; font-weight: bold; color: #f1f5f9; margin-bottom: 2px; }
+        .hero-title { font-size: 0.88rem; color: #94a3b8; }
 
-        .section-title { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; margin: 14px 0 8px; letter-spacing: 0.5px; display: flex; align-items: center; gap: 6px; }
+        .section-header { 
+            font-size: 0.9rem; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 8px;
+        }
         .title-rune { color: #f59e0b; }
         .title-item { color: #38bdf8; }
+        .badge-count { background: #334155; color: #cbd5e1; font-size: 0.75rem; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
 
         .icon-list { display: flex; flex-wrap: wrap; gap: 8px; }
         .icon-item { 
@@ -45,15 +72,14 @@
             align-items: center; 
             gap: 8px; 
             background: #0f172a; 
-            padding: 6px 10px; 
+            padding: 6px 12px; 
             border-radius: 8px; 
             border: 1px solid #334155; 
-            position: relative;
         }
-        .icon-item img { width: 30px; height: 30px; border-radius: 6px; object-fit: cover; }
+        .icon-item img { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; }
         .icon-item span.name { font-size: 0.85rem; color: #e2e8f0; font-weight: 500; }
         
-        /* S級符文專用紅色標籤 */
+        /* S 級符文徽章 */
         .s-badge { 
             background: #ef4444; 
             color: #ffffff; 
@@ -61,21 +87,24 @@
             font-weight: 800; 
             padding: 1px 5px; 
             border-radius: 4px; 
-            text-transform: uppercase;
+            margin-left: 2px;
         }
 
-        .no-data { text-align: center; color: #64748b; margin-top: 50px; font-size: 1.1rem; }
+        .empty-text { color: #64748b; font-size: 0.85rem; font-style: italic; }
+        .no-data { text-align: center; color: #64748b; margin-top: 60px; font-size: 1.2rem; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>⚔️ ARAM 大混戰出裝與符文指南</h1>
-        <p class="subtitle">即時同步 OP.GG S級強化符文與核心成品大裝組合</p>
+        <h1>⚔️ ARAM 大混戰全攻略</h1>
+        <p class="subtitle">即時查看全英雄 S 級強化符文與核心成品大裝列表</p>
     </header>
 
-    <input type="text" id="searchInput" class="search-box" placeholder="搜尋英雄名稱（例如：拉克絲、露露、阿卡莉、伊絲瑞爾）..." oninput="filterHeroes()">
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="輸入英雄中文名稱或 ID 搜尋（例如：阿卡莉、伊絲瑞爾、lux）..." oninput="filterHeroes()">
+    </div>
     
     <div id="heroGrid" class="hero-grid"></div>
     <div id="noData" class="no-data" style="display: none;">找不到對應的英雄數據</div>
@@ -84,7 +113,7 @@
 <script>
     let heroesData = {};
 
-    // 載入爬蟲生成的 JSON 檔案
+    // 載入爬蟲生成的 JSON 數據
     fetch('heroes_data.json')
         .then(res => res.json())
         .then(data => {
@@ -93,7 +122,7 @@
         })
         .catch(err => {
             console.error("載入 heroes_data.json 失敗:", err);
-            document.getElementById('noData').innerText = "資料載入失敗，請確認 heroes_data.json 是否已上傳。";
+            document.getElementById('noData').innerText = "數據載入失敗，請確認 heroes_data.json 已正確上傳至 GitHub。";
             document.getElementById('noData').style.display = 'block';
         });
 
@@ -112,7 +141,10 @@
             const card = document.createElement('div');
             card.className = 'card';
 
-            // 強化符文列表
+            const runeCount = hero.runes ? hero.runes.length : 0;
+            const itemCount = hero.items ? hero.items.length : 0;
+
+            // 1. 產生強化符文 HTML
             const runesHTML = (hero.runes && hero.runes.length > 0) 
                 ? hero.runes.map(r => `
                     <div class="icon-item">
@@ -121,9 +153,9 @@
                         ${r.isSTier ? '<span class="s-badge">S</span>' : ''}
                     </div>
                 `).join('')
-                : '<span style="color:#64748b; font-size:0.85rem;">尚無符文數據</span>';
+                : '<span class="empty-text">無 S 級符文數據</span>';
 
-            // 核心裝備列表
+            // 2. 產生核心裝備 HTML
             const itemsHTML = (hero.items && hero.items.length > 0)
                 ? hero.items.map(i => `
                     <div class="icon-item">
@@ -131,22 +163,32 @@
                         <span class="name">${i.name}</span>
                     </div>
                 `).join('')
-                : '<span style="color:#64748b; font-size:0.85rem;">尚無核心裝備數據</span>';
+                : '<span class="empty-text">無核心裝備數據</span>';
 
             card.innerHTML = `
                 <div class="hero-header">
                     <img src="${hero.avatar}" alt="${hero.name}" class="hero-avatar">
-                    <div>
+                    <div class="hero-info">
                         <div class="hero-name">${hero.name}</div>
                         <div class="hero-title">${hero.title}</div>
                     </div>
                 </div>
                 
-                <div class="section-title title-rune">🔥 強化符文</div>
-                <div class="icon-list">${runesHTML}</div>
+                <div>
+                    <div class="section-header title-rune">
+                        <span>🔥 S 級強化符文</span>
+                        <span class="badge-count">${runeCount} 個</span>
+                    </div>
+                    <div class="icon-list">${runesHTML}</div>
+                </div>
 
-                <div class="section-title title-item">🛡️ 核心成品大裝</div>
-                <div class="icon-list">${itemsHTML}</div>
+                <div>
+                    <div class="section-header title-item">
+                        <span>🛡️ 核心成品大裝</span>
+                        <span class="badge-count">${itemCount} 個</span>
+                    </div>
+                    <div class="icon-list">${itemsHTML}</div>
+                </div>
             `;
             grid.appendChild(card);
         });
