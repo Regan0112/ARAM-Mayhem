@@ -3,42 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>英雄聯盟：大混戰英雄即時搜尋</title>
+  <title>ARAM Mayhem 全英雄即時搜尋</title>
   <style>
-    body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; background: #121212; color: #fff; }
+    body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; background: #121212; color: #fff; }
     h2 { text-align: center; color: #5383e8; }
     input { width: 100%; padding: 14px; font-size: 16px; border-radius: 8px; border: 1px solid #333; background: #1e1e1e; color: #fff; box-sizing: border-box; }
     input:focus { outline: none; border-color: #5383e8; }
-    .card { background: #1e1e1e; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #333; text-align: center; }
-    .hero-avatar { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #5383e8; margin-bottom: 10px; }
-    .loading { color: #888; margin-top: 15px; text-align: center; display: none; }
-    .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #5383e8; color: #fff; text-decoration: none; border-radius: 6px; font-weight: bold; }
-    .btn:hover { background: #4169e1; }
+    .card { background: #1e1e1e; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #333; }
+    .hero-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+    .hero-avatar { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #5383e8; }
+    .hero-title { margin: 0; font-size: 20px; }
+    .hero-subtitle { color: #888; font-size: 14px; margin-top: 4px; }
+    .tag-container { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+    .tag-item { background: #1c2b46; color: #7aa2f7; padding: 6px 12px; border-radius: 6px; font-size: 14px; border: 1px solid #2ac3de33; }
+    .tag-rune { background: #2d2040; color: #bb9af7; padding: 6px 12px; border-radius: 6px; font-size: 14px; border: 1px solid #bb9af733; }
+    .section-title { font-size: 15px; margin-top: 15px; margin-bottom: 5px; color: #ddd; }
   </style>
 </head>
 <body>
 
-  <h2>ARAM Mayhem 大混戰即時搜尋</h2>
-  <input type="text" id="heroInput" placeholder="請輸入英雄中文或英文名稱 (例: 露露, lulu)...">
-  
-  <div id="loading" class="loading">搜尋中...</div>
+  <h2>ARAM Mayhem 全英雄即時搜尋</h2>
+  <input type="text" id="heroInput" placeholder="輸入中文或英文英雄名稱 (例: 露露, 拉克絲, lulu, lux)...">
   <div id="result"></div>
 
   <script>
-    let heroList = {};
-    const version = "14.1.1"; // Data Dragon 版本
+    let heroesData = {};
 
-    // 初始化：預先載入全英雄官方資料
-    async function init() {
+    // 載入同目錄下的 JSON 英雄資料庫
+    async function loadHeroData() {
       try {
-        const res = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/zh_TW/champion.json`);
-        const data = await res.json();
-        heroList = data.data;
-      } catch (e) {
-        console.error("載入英雄資料失敗", e);
+        const response = await fetch('./heroes_data.json');
+        heroesData = await response.json();
+      } catch (err) {
+        document.getElementById('result').innerHTML = `<div class="card" style="color:#ff6b6b">請先將 heroes_data.json 上傳至 GitHub 儲存庫。</div>`;
       }
     }
-    init();
+    loadHeroData();
 
     document.getElementById('heroInput').addEventListener('input', (e) => {
       const query = e.target.value.trim().toLowerCase();
@@ -49,27 +49,39 @@
         return;
       }
 
-      // 搜尋中文名稱或英文 ID
-      const matchedHeroKey = Object.keys(heroList).find(key => {
-        const hero = heroList[key];
-        return hero.name.toLowerCase().includes(query) || hero.id.toLowerCase().includes(query);
+      // 搜尋所有英雄：匹配中文名稱或英文 ID
+      const matchedKeys = Object.keys(heroesData).filter(name => {
+        const hero = heroesData[name];
+        return name.toLowerCase().includes(query) || hero.id.toLowerCase().includes(query);
       });
 
-      if (matchedHeroKey) {
-        const hero = heroList[matchedHeroKey];
-        const opggUrl = `https://op.gg/zh-tw/lol/modes/aram-mayhem/${hero.id.toLowerCase()}/items`;
-        
-        resultEl.innerHTML = `
-          <div class="card">
-            <img class="hero-avatar" src="https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${hero.id}.png" alt="${hero.name}">
-            <h3>${hero.name} (${hero.id})</h3>
-            <p>定位：${hero.tags.join(', ')}</p>
-            <p>${hero.blurb}</p>
-            <a class="btn" href="${opggUrl}" target="_blank">點此開啟 OP.GG 查看最新大混戰出裝</a>
-          </div>
-        `;
+      if (matchedKeys.length > 0) {
+        resultEl.innerHTML = matchedKeys.map(key => {
+          const hero = heroesData[key];
+          return `
+            <div class="card">
+              <div class="hero-header">
+                <img class="hero-avatar" src="${hero.avatar}" alt="${hero.name}">
+                <div>
+                  <h3 class="hero-title">${hero.name} <small>(${hero.id.toUpperCase()})</small></h3>
+                  <div class="hero-subtitle">${hero.title}</div>
+                </div>
+              </div>
+              
+              <div class="section-title">🛡️ 推薦出裝</div>
+              <div class="tag-container">
+                ${hero.items.map(i => `<span class="tag-item">${i}</span>`).join('')}
+              </div>
+
+              <div class="section-title">⚡ 推薦符文</div>
+              <div class="tag-container">
+                ${hero.runes.map(r => `<span class="tag-rune">${r}</span>`).join('')}
+              </div>
+            </div>
+          `;
+        }).join('');
       } else {
-        resultEl.innerHTML = `<div class="card" style="color:#ff6b6b">未找到符合「${query}」的英雄</div>`;
+        resultEl.innerHTML = `<div class="card" style="color:#888">未找到符合「${query}」的英雄</div>`;
       }
     });
   </script>
