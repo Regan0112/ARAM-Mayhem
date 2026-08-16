@@ -1,89 +1,105 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARAM Mayhem 全英雄即時搜尋</title>
-  <style>
-    body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; background: #121212; color: #fff; }
-    h2 { text-align: center; color: #5383e8; }
-    input { width: 100%; padding: 14px; font-size: 16px; border-radius: 8px; border: 1px solid #333; background: #1e1e1e; color: #fff; box-sizing: border-box; }
-    input:focus { outline: none; border-color: #5383e8; }
-    .card { background: #1e1e1e; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #333; }
-    .hero-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-    .hero-avatar { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #5383e8; }
-    .hero-title { margin: 0; font-size: 20px; }
-    .hero-subtitle { color: #888; font-size: 14px; margin-top: 4px; }
-    .tag-container { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
-    .tag-item { background: #1c2b46; color: #7aa2f7; padding: 6px 12px; border-radius: 6px; font-size: 14px; border: 1px solid #2ac3de33; }
-    .tag-rune { background: #2d2040; color: #bb9af7; padding: 6px 12px; border-radius: 6px; font-size: 14px; border: 1px solid #bb9af733; }
-    .section-title { font-size: 15px; margin-top: 15px; margin-bottom: 5px; color: #ddd; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARAM 大混戰 - 英雄強化符文與出裝查詢</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { text-align: center; margin-bottom: 20px; color: #38bdf8; font-size: 2rem; }
+        
+        .search-box { width: 100%; padding: 14px 20px; font-size: 1.1rem; border: 2px solid #334155; border-radius: 10px; background: #1e293b; color: #fff; margin-bottom: 25px; outline: none; transition: border-color 0.2s; }
+        .search-box:focus { border-color: #38bdf8; }
+
+        .hero-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #1e293b; border-radius: 12px; padding: 18px; border: 1px solid #334155; }
+        .hero-header { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; border-bottom: 1px solid #334155; padding-bottom: 10px; }
+        .hero-avatar { width: 56px; height: 56px; border-radius: 50%; border: 2px solid #38bdf8; }
+        .hero-name { font-size: 1.25rem; font-weight: bold; color: #f1f5f9; }
+        .hero-title { font-size: 0.85rem; color: #94a3b8; }
+
+        .section-title { font-size: 0.9rem; font-weight: bold; text-transform: uppercase; margin: 10px 0 6px; letter-spacing: 0.5px; }
+        .title-rune { color: #f59e0b; }
+        .title-item { color: #38bdf8; }
+
+        .tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+        .tag { padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; font-weight: 500; }
+        .tag-rune { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+        .tag-item { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); }
+
+        .no-data { text-align: center; color: #64748b; margin-top: 40px; font-size: 1.1rem; }
+    </style>
 </head>
 <body>
 
-  <h2>ARAM Mayhem 全英雄即時搜尋</h2>
-  <input type="text" id="heroInput" placeholder="輸入中文或英文英雄名稱 (例: 露露, 拉克絲, lulu, lux)...">
-  <div id="result"></div>
+<div class="container">
+    <h1>⚔️ ARAM 大混戰 專屬符文與出裝</h1>
+    <input type="text" id="searchInput" class="search-box" placeholder="輸入英雄中文名稱（例如：拉克絲、露露、艾希）..." oninput="filterHeroes()">
+    
+    <div id="heroGrid" class="hero-grid"></div>
+    <div id="noData" class="no-data" style="display: none;">找不到相符的英雄</div>
+</div>
 
-  <script>
+<script>
     let heroesData = {};
 
-    // 載入同目錄下的 JSON 英雄資料庫
-    async function loadHeroData() {
-      try {
-        const response = await fetch('./heroes_data.json');
-        heroesData = await response.json();
-      } catch (err) {
-        document.getElementById('result').innerHTML = `<div class="card" style="color:#ff6b6b">請先將 heroes_data.json 上傳至 GitHub 儲存庫。</div>`;
-      }
-    }
-    loadHeroData();
+    // 載入 JSON 資料
+    fetch('heroes_data.json')
+        .then(res => res.json())
+        .then(data => {
+            heroesData = data;
+            renderHeroes(Object.values(heroesData));
+        })
+        .catch(err => console.error("載入英雄資料失敗:", err));
 
-    document.getElementById('heroInput').addEventListener('input', (e) => {
-      const query = e.target.value.trim().toLowerCase();
-      const resultEl = document.getElementById('result');
+    function renderHeroes(list) {
+        const grid = document.getElementById('heroGrid');
+        const noData = document.getElementById('noData');
+        grid.innerHTML = '';
 
-      if (!query) {
-        resultEl.innerHTML = '';
-        return;
-      }
+        if (list.length === 0) {
+            noData.style.display = 'block';
+            return;
+        }
+        noData.style.display = 'none';
 
-      // 搜尋所有英雄：匹配中文名稱或英文 ID
-      const matchedKeys = Object.keys(heroesData).filter(name => {
-        const hero = heroesData[name];
-        return name.toLowerCase().includes(query) || hero.id.toLowerCase().includes(query);
-      });
+        list.forEach(hero => {
+            const card = document.createElement('div');
+            card.className = 'card';
 
-      if (matchedKeys.length > 0) {
-        resultEl.innerHTML = matchedKeys.map(key => {
-          const hero = heroesData[key];
-          return `
-            <div class="card">
-              <div class="hero-header">
-                <img class="hero-avatar" src="${hero.avatar}" alt="${hero.name}">
-                <div>
-                  <h3 class="hero-title">${hero.name} <small>(${hero.id.toUpperCase()})</small></h3>
-                  <div class="hero-subtitle">${hero.title}</div>
+            const runesHTML = hero.runes.map(r => `<span class="tag tag-rune">${r}</span>`).join('');
+            const itemsHTML = hero.items.map(i => `<span class="tag tag-item">${i}</span>`).join('');
+
+            card.innerHTML = `
+                <div class="hero-header">
+                    <img src="${hero.avatar}" alt="${hero.name}" class="hero-avatar">
+                    <div>
+                        <div class="hero-name">${hero.name}</div>
+                        <div class="hero-title">${hero.title}</div>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="section-title">🛡️ 推薦出裝</div>
-              <div class="tag-container">
-                ${hero.items.map(i => `<span class="tag-item">${i}</span>`).join('')}
-              </div>
+                
+                <div class="section-title title-rune">✨ 推薦強化符文</div>
+                <div class="tag-list">${runesHTML}</div>
 
-              <div class="section-title">⚡ 推薦符文</div>
-              <div class="tag-container">
-                ${hero.runes.map(r => `<span class="tag-rune">${r}</span>`).join('')}
-              </div>
-            </div>
-          `;
-        }).join('');
-      } else {
-        resultEl.innerHTML = `<div class="card" style="color:#888">未找到符合「${query}」的英雄</div>`;
-      }
-    });
-  </script>
+                <div class="section-title title-item">🛡️ 推薦裝備</div>
+                <div class="tag-list">${itemsHTML}</div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    function filterHeroes() {
+        const query = document.getElementById('searchInput').value.trim().toLowerCase();
+        const filtered = Object.values(heroesData).filter(hero => 
+            hero.name.toLowerCase().includes(query) || 
+            hero.id.toLowerCase().includes(query)
+        );
+        renderHeroes(filtered);
+    }
+</script>
+
 </body>
 </html>
