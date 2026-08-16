@@ -3,111 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>英雄聯盟：大混戰即時搜尋</title>
+  <title>英雄聯盟：大混戰英雄即時搜尋</title>
   <style>
     body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; background: #121212; color: #fff; }
     h2 { text-align: center; color: #5383e8; }
     input { width: 100%; padding: 14px; font-size: 16px; border-radius: 8px; border: 1px solid #333; background: #1e1e1e; color: #fff; box-sizing: border-box; }
     input:focus { outline: none; border-color: #5383e8; }
-    .card { background: #1e1e1e; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #333; }
+    .card { background: #1e1e1e; border-radius: 8px; padding: 20px; margin-top: 20px; border: 1px solid #333; text-align: center; }
+    .hero-avatar { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #5383e8; margin-bottom: 10px; }
     .loading { color: #888; margin-top: 15px; text-align: center; display: none; }
-    .tag-container { display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
-    .tag { background: #2a2b36; padding: 8px 14px; border-radius: 6px; font-size: 14px; color: #ecf0f1; border: 1px solid #3d3e52; }
-    .notice { font-size: 12px; color: #777; margin-top: 6px; }
+    .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: #5383e8; color: #fff; text-decoration: none; border-radius: 6px; font-weight: bold; }
+    .btn:hover { background: #4169e1; }
   </style>
 </head>
 <body>
 
-  <h2>ARAM Mayhem 大混戰即時出裝搜尋</h2>
-  <input type="text" id="heroInput" placeholder="請輸入英雄中文或英文名稱 (例: 露露, 拉克絲, lulu)...">
-  <div class="notice">* 支援中文英雄搜尋</div>
+  <h2>ARAM Mayhem 大混戰即時搜尋</h2>
+  <input type="text" id="heroInput" placeholder="請輸入英雄中文或英文名稱 (例: 露露, lulu)...">
   
-  <div id="loading" class="loading">正在擷取 OP.GG 資料，請稍候...</div>
+  <div id="loading" class="loading">搜尋中...</div>
   <div id="result"></div>
 
   <script>
-    // 常用中文對應表（可隨時擴充）
-    const HERO_MAP = {
-      "露露": "lulu", "拉克絲": "lux", "阿狸": "ahri", "九尾妖狐": "ahri",
-      "亞托克斯": "aatrox", "阿卡莉": "akali", "艾希": "ashe", "布里茨": "blitzcrank",
-      "凱特琳": "caitlyn", "達瑞斯": "darius", "伊澤瑞爾": "ezreal", "薩科": "shaco",
-      "小丑": "shaco", "蓋倫": "garen", "提摩": "teemo", "亞索": "yasuo", "維迦": "veigar",
-      "李星": "lee-sin", "卡爾瑟斯": "karthus", "卡莎": "kaisa", "藍寶": "rumble"
-    };
+    let heroList = {};
+    const version = "14.1.1"; // Data Dragon 版本
 
-    let debounceTimer;
+    // 初始化：預先載入全英雄官方資料
+    async function init() {
+      try {
+        const res = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/zh_TW/champion.json`);
+        const data = await res.json();
+        heroList = data.data;
+      } catch (e) {
+        console.error("載入英雄資料失敗", e);
+      }
+    }
+    init();
 
     document.getElementById('heroInput').addEventListener('input', (e) => {
-      clearTimeout(debounceTimer);
-      const rawQuery = e.target.value.trim().toLowerCase();
-      
-      if (!rawQuery) {
-        document.getElementById('result').innerHTML = '';
+      const query = e.target.value.trim().toLowerCase();
+      const resultEl = document.getElementById('result');
+
+      if (!query) {
+        resultEl.innerHTML = '';
         return;
       }
 
-      // 自動轉換中文名稱為 OP.GG 的英文代碼
-      const heroKey = HERO_MAP[rawQuery] || rawQuery;
+      // 搜尋中文名稱或英文 ID
+      const matchedHeroKey = Object.keys(heroList).find(key => {
+        const hero = heroList[key];
+        return hero.name.toLowerCase().includes(query) || hero.id.toLowerCase().includes(query);
+      });
 
-      debounceTimer = setTimeout(() => {
-        fetchOPGGData(heroKey, rawQuery);
-      }, 600);
-    });
-
-    async function fetchOPGGData(heroKey, displayName) {
-      const loadingEl = document.getElementById('loading');
-      const resultEl = document.getElementById('result');
-      
-      loadingEl.style.display = 'block';
-      resultEl.innerHTML = '';
-
-      // 使用公用免費代理，繞過跨網域限制
-      const targetUrl = `https://op.gg/zh-tw/lol/modes/aram-mayhem/${heroKey}/items`;
-      const proxyUrl = `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`;
-
-      try {
-        const response = await fetch(proxyUrl);
-        if (!response.ok) throw new Error("存取失敗，請確認英雄名稱");
+      if (matchedHeroKey) {
+        const hero = heroList[matchedHeroKey];
+        const opggUrl = `https://op.gg/zh-tw/lol/modes/aram-mayhem/${hero.id.toLowerCase()}/items`;
         
-        const htmlText = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(htmlText, 'text/html');
-
-        // 擷取裝備與符文標籤/圖片
-        const items = Array.from(doc.querySelectorAll('img[src*="item"]'))
-                          .map(img => img.alt || img.title || '')
-                          .filter((v, i, a) => v && a.indexOf(v) === i)
-                          .slice(0, 6);
-
-        const runes = Array.from(doc.querySelectorAll('img[src*="rune"], img[src*="perk"]'))
-                          .map(img => img.alt || img.title || '')
-                          .filter((v, i, a) => v && a.indexOf(v) === i)
-                          .slice(0, 4);
-
-        if (items.length === 0 && runes.length === 0) {
-          resultEl.innerHTML = `<div class="card" style="color:#ffb86c">搜尋提示：已成功連線，但未抓取到資料。請確認英雄英文代碼是否正確（例如 露露 請輸入 lulu）。</div>`;
-          return;
-        }
-
         resultEl.innerHTML = `
           <div class="card">
-            <h3>英雄：${displayName.toUpperCase()} (${heroKey})</h3>
-            <h4>推薦出裝</h4>
-            <div class="tag-container">
-              ${items.length ? items.map(i => `<span class="tag">🛡️ ${i}</span>`).join('') : '<span class="tag">暫無數據</span>'}
-            </div>
-            <h4>推薦符文</h4>
-            <div class="tag-container">
-              ${runes.length ? runes.map(r => `<span class="tag">⚡ ${r}</span>`).join('') : '<span class="tag">暫無數據</span>'}
-            </div>
+            <img class="hero-avatar" src="https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${hero.id}.png" alt="${hero.name}">
+            <h3>${hero.name} (${hero.id})</h3>
+            <p>定位：${hero.tags.join(', ')}</p>
+            <p>${hero.blurb}</p>
+            <a class="btn" href="${opggUrl}" target="_blank">點此開啟 OP.GG 查看最新大混戰出裝</a>
           </div>
         `;
-      } catch (err) {
-        resultEl.innerHTML = `<div class="card" style="color:#ff6b6b">連線失敗：${err.message}</div>`;
-      } finally {
-        loadingEl.style.display = 'none';
+      } else {
+        resultEl.innerHTML = `<div class="card" style="color:#ff6b6b">未找到符合「${query}」的英雄</div>`;
       }
-    }
+    });
   </script>
 </body>
 </html>
